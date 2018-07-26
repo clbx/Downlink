@@ -1,16 +1,16 @@
+GraphicsTest/Downlink/x64
 
-\.vs/
+GraphicsTest/Downlink/Debug
 
-DownlinkTest/Downlink/x64/Debug/
+GraphicsTEst/x64
 
-SDL2-2\.0\.8/
+SDL2-2.0.8
 
-DownlinkTest/Downlink/SDL2\.dll
-
-DownlinkTest/x64/Debug/
-
-DownlinkTest/Downlink/Debug/
+.vs
 
 *.filters
 
 *.user
+
+GraphicsTest/Downlink/SDL2.dll
+
