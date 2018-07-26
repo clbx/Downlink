@@ -1,9 +1,9 @@
-﻿# CMakeList.txt : Top-level CMake project file, do global configuration
-# and include sub-projects here.
+﻿# CMakeList.txt : CMake project for DownlinkTest, include source and define
+# project specific logic here.
 #
 cmake_minimum_required (VERSION 3.8)
 
-project ("DownlinkTest")
+# Add source to this project's executable.
+add_executable (DownlinkTest "DownlinkTest.cpp" "DownlinkTest.h")
 
-# Include sub-projects.
-add_subdirectory ("DownlinkTest")
+# TODO: Add tests and install targets if needed.
