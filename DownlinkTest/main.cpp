@@ -218,7 +218,7 @@ int main()
 		    cout << "You currently have a level " << player.level << " hacking tool" << endl;
 		    cout << "Would you like to buy a level " << player.level+1 << " hacking tool for " << (player.level+1) * 100 << "? (y/n)" << endl;
 		    cin >> choice;
-		    if(choice == "yes" && player.money >= (player.level+1)*100){
+		    if(choice == "y" && player.money >= (player.level+1)*100){
 		        player.level++;
 		        player.money -= player.level*100;
 		        cout << "Your hacking tool is now " << player.level << ". You have $"<< player.money << endl;
