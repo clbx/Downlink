@@ -14,3 +14,7 @@ SDL2-2.0.8
 
 GraphicsTest/Downlink/SDL2.dll
 
+
+DownlinkTest/\.idea/
+
+DownlinkTest/cmake-build-debug/

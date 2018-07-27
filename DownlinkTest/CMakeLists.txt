@@ -1,9 +1,6 @@
-﻿# CMakeList.txt : CMake project for DownlinkTest, include source and define
-# project specific logic here.
-#
-cmake_minimum_required (VERSION 3.8)
+cmake_minimum_required(VERSION 3.10)
+project(DownlinkTest)
 
-# Add source to this project's executable.
-add_executable (DownlinkTest "DownlinkTest.cpp" "DownlinkTest.h")
+set(CMAKE_CXX_STANDARD 11)
 
-# TODO: Add tests and install targets if needed.
+add_executable(DownlinkTest main.cpp Computer.cpp Player.cpp)
