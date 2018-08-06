@@ -1,4 +1,5 @@
 #include <iostream>
+#include <algorithm>
 #include "Player.hpp"
 #include "Computer.hpp"
 
@@ -109,8 +110,7 @@ int main()
 		        cout << "none" << endl;
 		}
 
-		//HACK
-
+		//HACK		if(statement){code}else{code}
 		else if(choice == "hack"){
 		    cin >> choice;
 
@@ -218,7 +218,10 @@ int main()
 		    cout << "You currently have a level " << player.level << " hacking tool" << endl;
 		    cout << "Would you like to buy a level " << player.level+1 << " hacking tool for " << (player.level+1) * 100 << "? (y/n)" << endl;
 		    cin >> choice;
-		    if(choice == "y" && player.money >= (player.level+1)*100){
+
+			transform(choice.begin(), choice.end(), choice.begin(), ::tolower); //Transforms "choice" to all lowercase
+
+		    if((choice == "y") ||(choice == "yes") && player.money >= (player.level+1)*100){
 		        player.level++;
 		        player.money -= player.level*100;
 		        cout << "Your hacking tool is now " << player.level << ". You have $"<< player.money << endl;
