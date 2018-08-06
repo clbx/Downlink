@@ -1,5 +1,5 @@
 //
-// Created by Clay Buxton on 7/26/2018.
+// Created by Tyler McLemore on 7/26/2018.
 //
 
 #include "Computer.hpp"
